@@ -116,7 +116,7 @@ if ($mode === 'bulanan' && $bulan) {
 // ======================================================
 // 2) LAPORAN BULANAN REKAP SETAHUN (ringkasan 12 bulan dalam tahun tertentu)
 // ======================================================
-elseif ($mode === 'bulanan' && !$bulan) {
+elseif ($mode === 'bulanan_per_tahun' && !$bulan) {
 
     $rekap = mysqli_query($koneksi,
         "SELECT MONTH(tanggal) AS bulan,
